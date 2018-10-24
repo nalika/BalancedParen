@@ -14,7 +14,7 @@ def BalancedParen(str):
 				print('imbalanced list: ' + str)
 				return False
 			elif bSet[pSet[-1]] == c:
-				pSet.remove(pSet[-1])				
+				pSet.pop() # remove the last element				
 			else:
 				print('imbalanced list: ' + str)
 				return False
